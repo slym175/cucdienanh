@@ -1,0 +1,262 @@
+[class^="icons-"],
+[class*="icons-"] {
+	background-image: url(../img/icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	line-height: 20px;
+	vertical-align: middle;
+	background-size: 150px 150px !important;
+}
+.icons-downloadable {
+	background-position: -4px -46px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+.icons-clock_gray{
+    background-position: -3px -25px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+
+/* mẫu đăng ký */
+.registration-item{
+    padding: 14px 16px;
+    border-bottom: 1px solid #E5E5E5;
+    display: flex;
+}
+.registration-item:first-child{
+    border-top: 1px solid #E5E5E5;
+}
+.registration-item .title-registration{
+    flex-grow: 1;
+}
+.registration-item .title-registration p{
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 22px;
+    color: #494D52;
+    padding-bottom: 10px;
+}
+.registration-item .title-registration span{
+    font-family: Arial;
+    font-weight: normal;
+    line-height: 18px;
+    color: #868686;
+}
+.registration-item .down-regidtration{
+    display: flex;
+    align-items: center;
+}
+.registration-item .down-regidtration a{
+    padding: 10px 20px;
+    border: 1px solid #C4C4C4;
+    border-radius: 25px;
+    font-family: Arial;
+    line-height: 18px;
+    color: #929292;
+}
+.registration-item .down-regidtration a::before{
+    content: "Tải xuống";
+}
+.registration-item .down-regidtration a i{
+    margin-left: 12px;
+}
+
+.registration-item:hover{
+    background: #EDF5FF;
+}
+.registration-item:hover p,.registration-item:hover span{
+    color: #195DB2;
+}
+.registration-item:hover p{
+    cursor: pointer;
+    font-weight: bold;
+}
+.registration-item:hover a{
+    background: #FFA519;
+    border: none;
+    color: #fff;
+}
+.registration-item:hover a .icons-downloadable {
+	background-position: -30px -46px;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+}
+
+.news-details-pagination {
+	margin-top: 26px;
+}
+.app-pagination {
+	overflow: auto;
+}
+
+.app-pagination .pagination {
+	justify-content: center;
+	align-items: center;
+}
+
+.app-pagination .pagination .hidden {
+	display: none;
+}
+.app-pagination .pagination .page{
+    padding-right: 15.31px;
+}
+.app-pagination .pagination .page:last-child{
+    padding-right: 0;
+}
+.app-pagination .pagination a {
+	margin: 0 2px;
+	font: normal normal 16px/19px var(--primary-font-family);
+	padding: .5rem .75rem;
+	text-align: center;
+	color: #195DB2;
+	display: inline-block;
+    white-space: nowrap;
+    border-radius: 50%;
+    background: #A5C6FB;
+    opacity: .3;
+}
+.app-pagination .pagination .page:last-child a{
+    color: #195DB2;
+    border: 1px solid #195DB2;
+    background: #fff;
+    opacity: 1;
+    padding: .45rem 0.73rem;
+}
+
+.app-pagination .pagination a:hover,
+.app-pagination .pagination a:focus,
+.app-pagination .pagination .page.active a,
+.app-pagination .pagination .page:last-child a:hover {
+	background-color: #195DB2;
+    color: #fff;
+    opacity: 1;
+}
+@media screen and (max-width:768px){
+    .registration-item{
+        padding: 14px 0;
+    }
+}
+@media screen and (max-width:480px){
+    .registration-item .down-regidtration a{
+        border: none;
+    }
+    .registration-item .down-regidtration a::before{
+        display: none;
+    }
+    .registration-item .down-regidtration a i{
+        margin-left: 0;
+    }
+}
+/* END mẫu đăng ký */
+
+/* Chi tiết phim */
+.new-title-film h3{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 38px;
+    font-weight: bold;
+    font-size: 28px;
+    color: #494D52;
+}
+.new-title-film div{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #848484;
+    padding-top: 12px;
+}
+.new-title-film div span:last-child{
+    padding-left: 36px;
+}
+.new-content-film{
+    color: #494D52;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.new-content-film iframe{
+    width: 100%;
+    height: 444px;
+    padding-top: 23px;
+}
+.new-content-film div{
+    font-style: italic;
+    text-align: center;
+    padding-top: 13px;
+}
+.new-content-film p{
+    line-height: 22px;
+    padding-top: 23px;
+}
+.film-right img{
+    width: 100%;
+}
+.film-right img.range{
+    padding-top: 29px;
+}
+.film-watch-more{
+    padding-top: 27px;
+}
+.film-watch-more h3{
+    text-transform: uppercase;
+    padding-left: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    color: #4C4C4C;
+    font-weight: bold;
+    position: relative;
+}
+.film-watch-more h3::before{
+    content: "";
+    width: 7px;
+    height: 18px;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    background: #0243C1;
+}
+.film-more{
+    display: flex;
+    padding-top: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.film-more .film-content-more{
+    padding-left: 0px;
+}
+.film-more .film-img-more img{
+    width: 100%;
+}
+.film-more .film-content-more a{
+    font-weight: bold;
+    color: #4C4C4C;
+    line-height: 20px;
+}
+.film-more .film-content-more a:hover{
+    color: #195DB2;
+}
+.film-more .film-content-more span{
+    display: block;
+    padding-top: 7px;
+    color: #494D52;
+}
+@media screen and (max-width:768px){
+    .film-right{
+        padding-top: 15px;
+    }
+}
+@media screen and (max-width:480px){
+    .new-content-film iframe{
+        height: 211px;
+    } 
+    .new-title-film div span:last-child{
+        padding-left: 15px;
+    }
+
+}
+/* END chi tiết phim */
+
+/* lịch chiếu phim */
