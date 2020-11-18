@@ -23,7 +23,45 @@
     margin-right: 10px;
     margin-bottom: 4px;
 }
+.icons-arrow{
+    background-position: -57px -27px;
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 12px;
+}
+/* home */
+.app-breadcrumb .breadcrumb {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: .75rem 0;
+	margin-bottom: 0rem;
+	margin-top: .75rem;
+	list-style: none;
+	background-color: transparent;
+	border-radius: .25rem;
+}
 
+.app-breadcrumb .breadcrumb .breadcrumb-item a,
+.app-breadcrumb .breadcrumb .breadcrumb-item span {
+    font-family: Arial, Helvetica, sans-serif;
+	font: normal normal 16px/18px var(--primary-font-family);
+	color: #5A5A5A;
+}
+
+/* .app-breadcrumb .breadcrumb .breadcrumb-item span {
+	color: var(--primary-color);
+} */
+
+.app-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+	content: "\f054";
+	font-size: 12px;
+	display: flex;
+	align-items: center;
+	color: #5A5A5A;
+}
 
 /* mẫu đăng ký */
 .registration-item{
@@ -260,3 +298,134 @@
 /* END chi tiết phim */
 
 /* lịch chiếu phim */
+.col-lg-6:nth-child(1) .calendar-film,
+.col-lg-6:nth-child(2) .calendar-film{
+    border: none;
+}
+.calendar-film{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #E5E5E5;
+}
+.calendar-film .calendar-img-film img{
+    width: 100%;
+}
+.calendar-content-film{
+    padding-left: 0;
+}
+.calendar-content-film .title-film-calendar a{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+    font-weight: bold;
+    color: #494D52;
+}
+.calendar-content-film .btn-watch a{
+    padding: 9px 22px;
+    border: 1px solid #FFA519;
+    color: #FFA519;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 34px;
+}
+.calendar-content-film .btn-watch a:hover{
+    background: #FFA519;
+    border: none;
+    color: #fff;
+}
+.calendar-detail{
+    padding-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #494D52;
+}
+.calendar-detail .table td{
+    padding: 0.5rem 0;
+    border: none;
+    color: #494D52;
+}
+@media screen and (max-width:1200px){
+    .calendar-detail .table td{
+        font-size: 15px;
+        padding: 0.3rem 0;
+    }
+}
+@media screen and (max-width:766px){
+    .calendar-detail .table td{
+        font-size: 12px;
+    }
+    .calendar-content-film{
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width:480px){
+    .calendar-film{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: none;
+    }
+    .calendar-content-film{
+        padding-left: 15px;
+    }
+    .calendar-detail{
+        display: none;
+    }
+    .title-film-calendar{
+        padding-bottom: 15px;
+    }
+}
+/* END lịch chiếu phim */
+
+/* kết quả tìm kiếm */
+.item-search{
+    padding: 15px 0;
+    border-top: 1px dashed #D9D6D6;
+}
+.item-search:first-child{
+    border: none;
+}
+.item-search .item-right{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0;
+}
+.item-search .item-right h4{
+    font-weight: bold;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+.item-search .item-right p{
+    padding-top: 5px;
+    padding-bottom: 9px;
+    text-align: justify;
+    line-height: 20px;
+    color: #4C4C4C;
+}
+.item-search .item-right a{
+    color: #195DB2;
+}
+.list-option a img{
+    padding-bottom: 19px;
+}
+.list-option a img{
+    width: 100%;
+}
+@media screen and (max-width: 1024px){
+    .item-search .item-right p{
+        padding: 3px 0;
+    }
+}
+@media screen and (max-width: 768px){
+    .item-search .item-right p{
+        padding-top: 2px;
+    }
+    .item-search .item-right{
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 480px){
+    .item-search .item-right h4{
+        padding-top: 10px;
+    }
+    .item-search .item-right p{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}   
+/* END kết quả tìm kiếm */
