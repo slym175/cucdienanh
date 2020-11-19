@@ -37,7 +37,7 @@
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: .75rem 0;
-	margin-bottom: 0rem;
+	margin-bottom: 1rem;
 	margin-top: .75rem;
 	list-style: none;
 	background-color: transparent;
@@ -130,7 +130,8 @@
 }
 
 .news-details-pagination {
-	margin-top: 26px;
+    margin-top: 26px;
+    margin-bottom: 26px;
 }
 .app-pagination {
 	overflow: auto;
@@ -365,14 +366,20 @@
     color: #494D52;
 }
 .calendar-detail .table td{
-    padding: 0.5rem 0;
+    padding: 6px 0;
     border: none;
+    line-height: 18px;
     color: #494D52;
 }
 @media screen and (max-width:1200px){
     .calendar-detail .table td{
         font-size: 15px;
         padding: 0.3rem 0;
+    }
+}
+@media screen and (max-width:1024px){
+    .calendar-content-film .btn-watch{
+        margin-top: 8px;
     }
 }
 @media screen and (max-width:766px){
@@ -382,13 +389,13 @@
     .calendar-content-film{
         padding-left: 15px;
     }
-}
-@media screen and (max-width:480px){
     .calendar-film{
         padding-top: 15px;
         padding-bottom: 15px;
         border: none;
     }
+}
+@media screen and (max-width:480px){
     .calendar-content-film{
         padding-left: 15px;
     }
@@ -534,4 +541,45 @@
         padding-left: 15px;
     }
 }
+/* END cơ cấu tổ chức */
 
+/* văn bản cs */
+.download-vb{
+    display: flex;
+}
+.download-vb:first-child{
+    background: #195DB2;
+    color: #fff;
+}
+.download-vb .item{
+    padding: 15px;
+    line-height: 22px;
+}
+.download-vb .kytu-vb{
+    width: 20%;
+}
+.download-vb .date-vb{
+    width: 20%;
+}
+.download-vb .text-vb{
+    width: 50%;
+}
+.download-vb .text-vb{
+    flex-grow: 1;
+}
+
+
+
+/* sơ đồ tổ chức */
+@media screen and (max-width: 768px){
+    .img-sodotochuc{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 480px){
+    
+    .img-sodotochuc img{
+        width: 100%;
+    }
+}
