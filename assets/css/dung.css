@@ -215,6 +215,7 @@
 .new-content-film{
     color: #494D52;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
 }
 .new-content-film iframe{
     width: 100%;
@@ -278,12 +279,39 @@
 }
 .film-more .film-content-more span{
     display: block;
-    padding-top: 7px;
     color: #494D52;
 }
+@media screen and (min-width:1025px) and (max-width:1280px){
+    .film-more .film-content-more{
+        font-size: 14px;
+    }
+    .film-more .film-content-more a{
+        line-height: 19.5px;
+    }
+    .film-more .film-content-more span{
+        padding-top: 5px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px){
+    .film-watch-more h3{
+        font-size: 16px;
+    }
+    .film-watch-more h3::before{
+        height: 13px;
+    }
+    .film-more .film-content-more a{
+        line-height: 14px;
+    }
+    .film-more .film-content-more{
+        font-size: 12px;
+    }
+    .film-more .film-content-more span{
+        padding-top: 4px;
+    }
+}
 @media screen and (max-width:768px){
-    .film-right{
-        padding-top: 15px;
+    .film-more .film-content-more span{
+        padding-top: 10px;
     }
 }
 @media screen and (max-width:480px){
@@ -406,6 +434,11 @@
 .list-option a img{
     width: 100%;
 }
+@media screen and (min-width: 1025px){
+    .item-search .item-right p{
+        padding: 10px 0;
+    }
+}
 @media screen and (max-width: 1024px){
     .item-search .item-right p{
         padding: 3px 0;
@@ -418,6 +451,9 @@
     .item-search .item-right{
         padding-left: 15px;
     }
+    .item-order{
+        order: 1;
+    }
 }
 @media screen and (max-width: 480px){
     .item-search .item-right h4{
@@ -429,3 +465,73 @@
     }
 }   
 /* END kết quả tìm kiếm */
+
+/* lịch sử tìm kiếm */
+.history-film{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #4C4C4C;
+    line-height: 22px;
+    text-align: justify;
+}
+.history-film p,.history-film h3{
+    padding-top: 20px;
+}
+.history-film h3{
+    font-weight: bold;
+}
+
+/* END lịch sử ngành */
+
+/* Cơ cấu tổ chức */
+.structure-detail{
+    display: flex;
+    padding: 20px 0;
+    border-top: 1px dashed #D0D0D0;
+}
+.structure-detail:first-child{
+    padding-top: 0;
+    border: none;
+}
+.structure-detail .profile-people{
+    display: flex;
+    align-items: center;
+    padding-left: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 22px;
+}
+.structure-detail .profile-people p{
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.left-nav {
+	margin-bottom: 2rem;
+}
+
+.left-nav .nav-item .nav-link {
+	font: normal normal 16px/18px var(--primary-font-family);
+    color: #494D52;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #D0D0D0;
+    position: relative;
+    background: #fff;
+}
+.left-nav .nav-item .nav-link:first-child{
+    border-top: 1px solid #D0D0D0;
+}
+.left-nav .nav-item .nav-link .title {
+	padding-left: 22px;
+}
+.left-nav .nav-item .choose,.left-nav .nav-item .nav-link:hover{
+    background: #CEDFFF;
+    font-weight: bold;
+    border-left: 6px solid #0243C1;
+}
+@media screen and (max-width: 480px){
+    .structure-detail .profile-people{
+        padding-left: 15px;
+    }
+}
+
