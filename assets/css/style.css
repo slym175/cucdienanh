@@ -1193,3 +1193,20 @@ em {
 .news-details-footer .connect .iconconnect.em {
 	background: #FFA013;
 }
+
+.scroll-height {
+	animation-name: scroll-height;
+	animation-duration: 3s;
+}
+
+@keyframes scroll-height {
+	0% {
+		height: 0;
+		overflow: hidden;
+	}
+
+	100% {
+		height: 100%;
+		overflow: hidden;
+	}
+}
