@@ -5,25 +5,21 @@
   overflow: hidden;
   position: relative;
 }
-
 .img-container img {
   max-width: 100%;
   height: auto;
 }
 
 @media (min-width: 1440px) {
-
   .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl {
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
     max-width: 1336px;
   }
 }
-
-.icons-download,
-.icons-search {
+.icons-download, .icons-search {
   vertical-align: middle;
   background-size: 150px 150px !important;
   background-repeat: no-repeat;
@@ -67,7 +63,6 @@ input::-webkit-input-placeholder {
   color: #fff;
   opacity: 1;
 }
-
 input::-moz-placeholder {
   /* Firefox 19+ */
   font-style: normal;
@@ -78,7 +73,6 @@ input::-moz-placeholder {
   color: #fff;
   opacity: 1;
 }
-
 input:-ms-input-placeholder {
   /* IE 10+ */
   font-style: normal;
@@ -89,7 +83,6 @@ input:-ms-input-placeholder {
   color: #fff;
   opacity: 1;
 }
-
 input:-moz-placeholder {
   /* Firefox 18- */
   font-style: normal;
@@ -99,4 +92,11 @@ input:-moz-placeholder {
   font-family: RobotoRegular;
   color: #fff;
   opacity: 1;
+}
+
+.top-header {
+  background-image: url(../images/bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% auto;
 }
