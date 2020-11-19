@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,265 +9,385 @@
     <meta name="author" content="Slym">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WEB - Lịch chiếu phim</title>
+    <title>WEB - Lịch sử ngành</title>
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/dist/app.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/dung.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <header class="header">
-        <!-- Do Something -->
-    </header>
 
-    <main class="main">
-        <section class="app-breadcrumb">
+<body>
+    <div class="bg-page">
+        <header class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item fas"><a href="#"><i class="fas fa-home"></i></a></li>
-                                <li class="breadcrumb-item fas active" aria-current="page"><span>Lịch chiếu phim</span>
-                                </li>
-                            </ol>
+                        <div class="top-header">
+                            <a class="logo" href="trangchu.html">
+                                <p>BỘ VĂN HÓA - THỂ THAO & DU LỊCH</p>
+                                <h3>CỤC ĐIỆN ẢNH</h3>
+                            </a>
+                        </div>
+                        <div class="head-banner">
+                            <div class="img-container">
+                                <img src="./assets/images/b12.png" alt="Page Banner">
+                            </div>
+                            <h4 class="page-title">Lịch chiếu phim</h4>
+                        </div>
+                        <nav class="head-nav navbar navbar-expand-lg navbar-dark bg-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <ul class="navbar-nav nav nav-fill">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="trangchu.html"><i class="fas fa-home"></i>
+                                            Trang chủ </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="chucnangnhiemvu.html">Giới thiệu <i
+                                                class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li><a href="chucnangnhiemvu.html">Chức năng nhiệm vụ</a></li>
+                                            <li><a href="cocautochuc.html">Cơ cấu tổ chức</a></li>
+                                            <li><a href="sodococautochuc.html">Sơ đồ cơ cấu tổ chức</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tintuc.html">Tin tức <i
+                                                class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li><a href="tintuc.html">Tin điện ảnh</a></li>
+                                            <li><a href="tintuc.html">Tin kịch nghệ</a></li>
+                                            <li>
+                                                <a href="tintuc.html">Tin bóng đá <i
+                                                        class="fas fa-chevron-down"></i></a>
+                                                <ul class="submenu_lv2">
+                                                    <li><a href="tintuc.html">Tin điện ảnh</a></li>
+                                                    <li><a href="tintuc.html">Tin kịch nghệ</a></li>
+                                                    <li><a href="tintuc.html">Tin bóng đá</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="lichsunganh.html  ">Lịch sử ngành</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Phát hành - Phổ biến phim</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hợp tác quốc tế</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-search" href="#"><i class="icons-search"
+                                                aria-hidden="true"></i> Tìm
+                                            kiếm</a>
+                                        <form action="#" method="POST" enctype="multipart/form-data"
+                                            class="search-form d-none">
+                                            <div>
+                                                <input type="text" placeholder="Tìm kiếm từ cục điện ảnh...">
+                                                <a href="#" type="submit"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <select class="change_language nav-link">
+                                            <option value="">Việt Nam</option>
+                                            <option value="">English</option>
+                                        </select>
+                                    </li>
+                                    <li class="nav-item d-lg-none menu-opened">
+                                        <a class="nav-link" href="#">Ngôn ngữ<i class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li>
+                                                <a href="">Tiếng Việt <img class="mr-auto ml-3"
+                                                        src="./assets/images/vietnam.png" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tiếng Anh <img class="mr-auto ml-3"
+                                                        src="./assets/images/english.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item d-lg-none">
+                                        <a href="" data-toggle="collapse" data-target="#navbarNav"
+                                            aria-controls="navbarNav" class="close-nav" aria-expanded="true"
+                                            aria-label="Toggle navigation">
+                                            <span aria-hidden="true">×</span>
+                                            <span class="ml-2">Đóng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-12 col-lg-6">
-                    <div class="calendar-film">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 calendar-img-film">
-                            <img src="./assets/img/lich-1.png" alt="">
-                            </div>
-                            <div class="col-12 col-sm-8 calendar-content-film">
-                                <div class="title-film-calendar">
-                                    <a href="#">Tiệc trăng máu (2D)</a>
-                                </div>
-                                <div class="calendar-detail">
-                                    <table class="table"> 
-                                        <thead hidden>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td>Diễn viên:</td>
-                                                <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Đạo diễn:</td>
-                                                <td colspan="4">Nguyễn Quang Dũng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quốc gia:</td>
-                                                <td colspan="4">Việt Nam</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khởi chiếu:</td>
-                                                <td colspan="4">20/10/2020</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khuyến cáo:</td>
-                                                <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
-                                            </tr>
-                                        </tbody>
-                                        
-                                    </table>
-                                </div>
-                                <div class="btn-watch">
-                                    <a href="#">Xem Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-12 col-lg-6">
-                    <div class="calendar-film">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 calendar-img-film">
-                            <img src="./assets/img/lich-1.png" alt="">
-                            </div>
-                            <div class="col-12 col-sm-8 calendar-content-film">
-                                <div class="title-film-calendar">
-                                    <a href="#">Tiệc trăng máu (2D)</a>
-                                </div>
-                                <div class="calendar-detail">
-                                    <table class="table"> 
-                                        <thead hidden>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td>Diễn viên:</td>
-                                                <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Đạo diễn:</td>
-                                                <td colspan="4">Nguyễn Quang Dũng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quốc gia:</td>
-                                                <td colspan="4">Việt Nam</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khởi chiếu:</td>
-                                                <td colspan="4">20/10/2020</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khuyến cáo:</td>
-                                                <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
-                                            </tr>
-                                        </tbody>
-                                        
-                                    </table>
-                                </div>
-                                <div class="btn-watch">
-                                    <a href="#">Xem Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-                <div class="col-6 col-sm-12 col-lg-6">
-                    <div class="calendar-film">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 calendar-img-film">
-                            <img src="./assets/img/lich-1.png" alt="">
-                            </div>
-                            <div class="col-12 col-sm-8 calendar-content-film">
-                                <div class="title-film-calendar">
-                                    <a href="#">Tiệc trăng máu (2D)</a>
-                                </div>
-                                <div class="calendar-detail">
-                                    <table class="table"> 
-                                        <thead hidden>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td>Diễn viên:</td>
-                                                <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Đạo diễn:</td>
-                                                <td colspan="4">Nguyễn Quang Dũng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quốc gia:</td>
-                                                <td colspan="4">Việt Nam</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khởi chiếu:</td>
-                                                <td colspan="4">20/10/2020</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khuyến cáo:</td>
-                                                <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
-                                            </tr>
-                                        </tbody>
-                                        
-                                    </table>
-                                </div>
-                                <div class="btn-watch">
-                                    <a href="#">Xem Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>          
-                </div>
-                <div class="col-6 col-sm-12 col-lg-6">
-                    <div class="calendar-film">
-                        <div class="row">
-                            <div class="col-12 col-sm-4 calendar-img-film">
-                            <img src="./assets/img/lich-1.png" alt="">
-                            </div>
-                            <div class="col-12 col-sm-8 calendar-content-film">
-                                <div class="title-film-calendar">
-                                    <a href="#">Tiệc trăng máu (2D)</a>
-                                </div>
-                                <div class="calendar-detail">
-                                    <table class="table"> 
-                                        <thead hidden>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                            <th scope="col"></th>
-                                        </thead> 
-                                        <tbody>
-                                            <tr>
-                                                <td>Diễn viên:</td>
-                                                <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Đạo diễn:</td>
-                                                <td colspan="4">Nguyễn Quang Dũng</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Quốc gia:</td>
-                                                <td colspan="4">Việt Nam</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khởi chiếu:</td>
-                                                <td colspan="4">20/10/2020</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Khuyến cáo:</td>
-                                                <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
-                                            </tr>
-                                        </tbody>
-                                        
-                                    </table>
-                                </div>
-                                <div class="btn-watch">
-                                    <a href="#">Xem Ngay</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="news-details-pagination">
-                        <nav class="app-pagination">
-                            <ul class="pagination" id="yw0">
-                                <li class="page active"><a href="#">1</a></li>
-                                <li class="page"><a href="#">2</a></li>
-                                <li class="page"><a href="#">3</a></li>
-                                <li class="page"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
-                                </li>
-                            </ul>
-                        </nav>
-                </div>  
-                </div>
-                
-            </div>
-        </div>
-    </main>
+        </header>
 
-    <footer class="footer">
-        <!-- Do Something -->
-    </footer>
-    
+        <main class="main">
+            <div class="container bg-white">
+                <div class="row">
+                    <div class="col-12">
+                        <section class="app-breadcrumb">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item fas"><a href="#"><i class="fas fa-home"></i></a></li>
+                                    <li class="breadcrumb-item fas active" aria-current="page"><span>Lịch sử
+                                            ngành</span></li>
+                                </ol>
+                            </nav>
+                        </section>
+                    </div>
+
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="calendar-film">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 calendar-img-film">
+                                    <img src="./assets/img/lich-1.png" alt="">
+                                </div>
+                                <div class="col-12 col-sm-8 calendar-content-film">
+                                    <div class="title-film-calendar">
+                                        <a href="#">Tiệc trăng máu (2D)</a>
+                                    </div>
+                                    <div class="calendar-detail">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>Diễn viên:</td>
+                                                    <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đạo diễn:</td>
+                                                    <td colspan="4">Nguyễn Quang Dũng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Quốc gia:</td>
+                                                    <td colspan="4">Việt Nam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khởi chiếu:</td>
+                                                    <td colspan="4">20/10/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khuyến cáo:</td>
+                                                    <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div class="btn-watch">
+                                        <a href="#">Xem Ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="calendar-film">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 calendar-img-film">
+                                    <img src="./assets/img/lich-1.png" alt="">
+                                </div>
+                                <div class="col-12 col-sm-8 calendar-content-film">
+                                    <div class="title-film-calendar">
+                                        <a href="#">Tiệc trăng máu (2D)</a>
+                                    </div>
+                                    <div class="calendar-detail">
+                                        <table class="table">
+                                            <thead hidden>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Diễn viên:</td>
+                                                    <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đạo diễn:</td>
+                                                    <td colspan="4">Nguyễn Quang Dũng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Quốc gia:</td>
+                                                    <td colspan="4">Việt Nam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khởi chiếu:</td>
+                                                    <td colspan="4">20/10/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khuyến cáo:</td>
+                                                    <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div class="btn-watch">
+                                        <a href="#">Xem Ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="calendar-film">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 calendar-img-film">
+                                    <img src="./assets/img/lich-1.png" alt="">
+                                </div>
+                                <div class="col-12 col-sm-8 calendar-content-film">
+                                    <div class="title-film-calendar">
+                                        <a href="#">Tiệc trăng máu (2D)</a>
+                                    </div>
+                                    <div class="calendar-detail">
+                                        <table class="table">
+                                            <thead hidden>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Diễn viên:</td>
+                                                    <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đạo diễn:</td>
+                                                    <td colspan="4">Nguyễn Quang Dũng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Quốc gia:</td>
+                                                    <td colspan="4">Việt Nam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khởi chiếu:</td>
+                                                    <td colspan="4">20/10/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khuyến cáo:</td>
+                                                    <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div class="btn-watch">
+                                        <a href="#">Xem Ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-12 col-lg-6">
+                        <div class="calendar-film">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 calendar-img-film">
+                                    <img src="./assets/img/lich-1.png" alt="">
+                                </div>
+                                <div class="col-12 col-sm-8 calendar-content-film">
+                                    <div class="title-film-calendar">
+                                        <a href="#">Tiệc trăng máu (2D)</a>
+                                    </div>
+                                    <div class="calendar-detail">
+                                        <table class="table">
+                                            <thead hidden>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Diễn viên:</td>
+                                                    <td colspan="4">Thái Hoà, Đức Thịnh, Hồng Ánh</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Đạo diễn:</td>
+                                                    <td colspan="4">Nguyễn Quang Dũng</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Quốc gia:</td>
+                                                    <td colspan="4">Việt Nam</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khởi chiếu:</td>
+                                                    <td colspan="4">20/10/2020</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Khuyến cáo:</td>
+                                                    <td colspan="4">Phim cấm khán giả dưới 18 tuổi</td>
+                                                </tr>
+                                            </tbody>
+
+                                        </table>
+                                    </div>
+                                    <div class="btn-watch">
+                                        <a href="#">Xem Ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="news-details-pagination">
+                            <nav class="app-pagination">
+                                <ul class="pagination" id="yw0">
+                                    <li class="page active"><a href="#">1</a></li>
+                                    <li class="page"><a href="#">2</a></li>
+                                    <li class="page"><a href="#">3</a></li>
+                                    <li class="page"><a href="#"><i class="fas fa-chevron-right"></i></a></li>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-content">
+                            <h3>BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH - CỤC ĐIỆN ẢNH</h3>
+                            <p>Trưởng ban biên tập: Đỗ Quốc Việt, Phó Cục trưởng</p>
+                            <div class="d-flex">
+                                <a href="">
+                                    <i class="icons-location mr-2"></i>147 Hoàng Hoa Thám, Ba Đình, Hà Nội
+                                </a>
+                                <a href="tel:024.38542.402">
+                                    <i class="icons-phone mr-2 ml-md-4"></i>024.38542.402
+                                </a>
+                                <a href="mailto:cucdienanh@chinhphu.vn">
+                                    <i class="icons-mail mr-2 ml-md-4"></i>cucdienanh@chinhphu.vn
+                                </a>
+                            </div>
+                            <span class="copyright">@2020 Bản quyền thuộc Bộ Văn hóa, Thể thao và Du lịch - Cục điện
+                                ảnh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
@@ -275,4 +396,5 @@
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>

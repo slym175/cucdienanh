@@ -9,257 +9,362 @@
     <meta name="author" content="Slym">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>WEB - Lịch chiếu phim</title>
+    <title>WEB - Lịch sử ngành</title>
     <link rel="stylesheet" href="./assets/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/dist/app.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/dung.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <!-- Do Something -->
-    </header>
-
-    <main class="main">
-        <section class="app-breadcrumb">
+    <div class="bg-page">
+        <header class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item fas active" aria-current="page"><span>Kết quả tìm kiếm: 7
-                                    </span>
-                                </li>
-                            </ol>
+                        <div class="top-header">
+                            <a class="logo" href="trangchu.html">
+                                <p>BỘ VĂN HÓA - THỂ THAO & DU LỊCH</p>
+                                <h3>CỤC ĐIỆN ẢNH</h3>
+                            </a>
+                        </div>
+                        <nav class="head-nav navbar navbar-expand-lg navbar-dark bg-dark">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <ul class="navbar-nav nav nav-fill">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="trangchu.html"><i class="fas fa-home"></i> Trang chủ </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="chucnangnhiemvu.html">Giới thiệu <i class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li><a href="chucnangnhiemvu.html">Chức năng nhiệm vụ</a></li>
+                                            <li><a href="cocautochuc.html">Cơ cấu tổ chức</a></li>
+                                            <li><a href="sodococautochuc.html">Sơ đồ cơ cấu tổ chức</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tintuc.html">Tin tức <i class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li><a href="tintuc.html">Tin điện ảnh</a></li>
+                                            <li><a href="tintuc.html">Tin kịch nghệ</a></li>
+                                            <li>
+                                                <a href="tintuc.html">Tin bóng đá <i class="fas fa-chevron-down"></i></a>
+                                                <ul class="submenu_lv2">
+                                                    <li><a href="tintuc.html">Tin điện ảnh</a></li>
+                                                    <li><a href="tintuc.html">Tin kịch nghệ</a></li>
+                                                    <li><a href="tintuc.html">Tin bóng đá</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="lichsunganh.html  ">Lịch sử ngành</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Phát hành - Phổ biến phim</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Hợp tác quốc tế</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link btn-search" href="#"><i class="icons-search"
+                                                aria-hidden="true"></i> Tìm
+                                            kiếm</a>
+                                        <form action="#" method="POST" enctype="multipart/form-data" class="search-form d-none">
+                                            <div>
+                                                <input type="text" placeholder="Tìm kiếm từ cục điện ảnh...">
+                                                <a href="#" type="submit"><i class="fa fa-search"
+                                                        aria-hidden="true"></i></a>
+                                            </div>
+                                        </form>
+                                    </li>
+                                    <li class="nav-item d-none d-lg-block">
+                                        <select class="change_language nav-link">
+                                            <option value="">Việt Nam</option>
+                                            <option value="">English</option>
+                                        </select>
+                                    </li>
+                                    <li class="nav-item d-lg-none menu-opened">
+                                        <a class="nav-link" href="#">Ngôn ngữ<i class="fas fa-chevron-down"></i></a>
+                                        <ul class="submenu_lv1">
+                                            <li>
+                                                <a href="">Tiếng Việt <img class="mr-auto ml-3"
+                                                        src="./assets/images/vietnam.png" alt=""></a>
+                                            </li>
+                                            <li>
+                                                <a href="">Tiếng Anh <img class="mr-auto ml-3"
+                                                        src="./assets/images/english.png" alt=""></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item d-lg-none">
+                                        <a href="" data-toggle="collapse" data-target="#navbarNav"
+                                            aria-controls="navbarNav" class="close-nav" aria-expanded="true"
+                                            aria-label="Toggle navigation">
+                                            <span aria-hidden="true">×</span>
+                                            <span class="ml-2">Đóng</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-9">
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-search">
-                        <div class="row">
-                            <div class="col-12 col-md-4">
-                                <img src="./assets/img/19 1.png" width="100%">
-                            </div>
-                            <div class="col-12 col-md-8 item-right">
-                                <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
-                                <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
-                                    Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
-                                    dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
-                                    tru, duyên dáng.</p>
-                                <a href="#">
-                                    Xem thêm <i class="icons-arrow"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-12 col-lg-3">
-                    <div class="list-option">
-                        <div class="row">
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-1.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-2.png">
-                                </a>
-                            </div>
-                            <div class="col-12 item-order">
-                                <a href="#">
-                                    <img src="./assets/img/15 1.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-3.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-4.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-5.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-6.png">
-                                </a>
-                            </div>
-                            <div class="col-md-6 col-12 col-lg-12">
-                                <a href="#">
-                                    <img src="./assets/img/ri-7.png">
-                                </a>
-                            </div>
-                        </div>
-                        <!-- <ul>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-1.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-2.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/15 1.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-3.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-4.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-5.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-6.png">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./assets/img/ri-7.png">
-                                </a>
-                            </li>
-                        </ul> -->
-                    </div>
-                </div>
+        </header>
 
+        <main class="main">
+            <div class="container bg-white">
+                <div class="row">
+                    <div class="col-12">
+                        <p>Kết quả tìm kiếm: 7 </p>
+                    </div>
+                    <div class="col-lg-9 col-12">
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-search">
+                            <div class="row">
+                                <div class="col-12 col-md-4">
+                                    <img src="./assets/img/19 1.png" width="100%">
+                                </div>
+                                <div class="col-12 col-md-8 item-right">
+                                    <h4>“49 ngày” - Dấu ấn mới của phim Việt?</h4>
+                                    <p>Nếu ai từng thưởng thức bộ phim hồi đầu năm của đạo diễn Nhất Trung là Thám tử Hên
+                                        Ry, họ hẳn sẽ có ít nhiều bất ngờ với 49 ngày. Sự gượng gạo, khô cứng biến mất không
+                                        dấu vết, nhường chỗ cho những trường đoạn hài, bi, lãng mạn và cả hành động trơn
+                                        tru, duyên dáng.</p>
+                                    <a href="#">
+                                        Xem thêm <i class="icons-arrow"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12">
+                        <div class="list-option">
+                            <div class="row">
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-1.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-2.png">
+                                    </a>
+                                </div>
+                                <div class="col-12 item-order">
+                                    <a href="#">
+                                        <img src="./assets/img/15 1.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-3.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-4.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-5.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-6.png">
+                                    </a>
+                                </div>
+                                <div class="col-md-6 col-12 col-lg-12">
+                                    <a href="#">
+                                        <img src="./assets/img/ri-7.png">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-1.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-2.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/15 1.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-3.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-4.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-5.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-6.png">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="./assets/img/ri-7.png">
+                                    </a>
+                                </li>
+                            </ul> -->
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="footer">
-        <!-- Do Something -->
-    </footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer-content">
+                            <h3>BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH - CỤC ĐIỆN ẢNH</h3>
+                            <p>Trưởng ban biên tập: Đỗ Quốc Việt, Phó Cục trưởng</p>
+                            <div class="d-flex">
+                                <a href="">
+                                    <i class="icons-location mr-2"></i>147 Hoàng Hoa Thám, Ba Đình, Hà Nội
+                                </a>
+                                <a href="tel:024.38542.402">
+                                    <i class="icons-phone mr-2 ml-md-4"></i>024.38542.402
+                                </a>
+                                <a href="mailto:cucdienanh@chinhphu.vn">
+                                    <i class="icons-mail mr-2 ml-md-4"></i>cucdienanh@chinhphu.vn
+                                </a>
+                            </div>
+                            <span class="copyright">@2020 Bản quyền thuộc Bộ Văn hóa, Thể thao và Du lịch - Cục điện ảnh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>

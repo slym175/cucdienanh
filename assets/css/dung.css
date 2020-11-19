@@ -36,9 +36,10 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	padding: .75rem 0;
+    padding: 0;
+    padding-bottom: 1rem;
 	margin-bottom: 0rem;
-	margin-top: .75rem;
+	margin-top: 0;
 	list-style: none;
 	background-color: transparent;
 	border-radius: .25rem;
@@ -449,7 +450,7 @@
         padding-top: 2px;
     }
     .item-search .item-right{
-        padding-left: 15px;
+        padding-left: 20px;
     }
     .item-order{
         order: 1;
