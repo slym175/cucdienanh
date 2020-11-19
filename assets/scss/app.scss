@@ -224,3 +224,13 @@ $line-color-2: #CA2026;
 input {
     @include placeholder(#fff, normal, normal, 16px, 18px, $primary-font-family);
 }
+
+// header
+.top-header {
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+}
+
+// end header
