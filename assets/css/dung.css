@@ -1,4 +1,4 @@
-[class^="icons-"],
+/* [class^="icons-"],
 [class*="icons-"] {
 	background-image: url(../img/icons.png);
 	background-repeat: no-repeat;
@@ -29,27 +29,27 @@
     height: 10px;
     display: inline-block;
     margin-left: 12px;
-}
+} */
 /* home */
 .app-breadcrumb .breadcrumb {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 0;
     padding-bottom: 1rem;
-	margin-bottom: 0rem;
-	margin-top: 0;
-	list-style: none;
-	background-color: transparent;
-	border-radius: .25rem;
+    margin-bottom: 0rem;
+    margin-top: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: .25rem;
 }
 
 .app-breadcrumb .breadcrumb .breadcrumb-item a,
 .app-breadcrumb .breadcrumb .breadcrumb-item span {
     font-family: Arial, Helvetica, sans-serif;
-	font: normal normal 16px/18px var(--primary-font-family);
-	color: #5A5A5A;
+    font: normal normal 16px/18px var(--primary-font-family);
+    color: #5A5A5A;
 }
 
 /* .app-breadcrumb .breadcrumb .breadcrumb-item span {
@@ -57,43 +57,49 @@
 } */
 
 .app-breadcrumb .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
-	content: "\f054";
-	font-size: 12px;
-	display: flex;
-	align-items: center;
-	color: #5A5A5A;
+    content: "\f054";
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #5A5A5A;
 }
 
 /* mẫu đăng ký */
-.registration-item{
+.registration-item {
     padding: 14px 16px;
     border-bottom: 1px solid #E5E5E5;
     display: flex;
 }
-.registration-item:first-child{
+
+.registration-item:first-child {
     border-top: 1px solid #E5E5E5;
 }
-.registration-item .title-registration{
+
+.registration-item .title-registration {
     flex-grow: 1;
 }
-.registration-item .title-registration p{
+
+.registration-item .title-registration p {
     font-family: Arial;
     font-weight: normal;
     line-height: 22px;
     color: #494D52;
     padding-bottom: 10px;
 }
-.registration-item .title-registration span{
+
+.registration-item .title-registration span {
     font-family: Arial;
     font-weight: normal;
     line-height: 18px;
     color: #868686;
 }
-.registration-item .down-regidtration{
+
+.registration-item .down-regidtration {
     display: flex;
     align-items: center;
 }
-.registration-item .down-regidtration a{
+
+.registration-item .down-regidtration a {
     padding: 10px 20px;
     border: 1px solid #C4C4C4;
     border-radius: 25px;
@@ -101,69 +107,83 @@
     line-height: 18px;
     color: #929292;
 }
-.registration-item .down-regidtration a::before{
+
+.registration-item .down-regidtration a::before {
     content: "Tải xuống";
 }
-.registration-item .down-regidtration a i{
+
+.registration-item .down-regidtration a i {
     margin-left: 12px;
 }
 
-.registration-item:hover{
+.registration-item:hover {
     background: #EDF5FF;
 }
-.registration-item:hover p,.registration-item:hover span{
+
+.registration-item:hover p,
+.registration-item:hover span {
     color: #195DB2;
 }
-.registration-item:hover p{
+
+.registration-item:hover p {
     cursor: pointer;
     font-weight: bold;
 }
-.registration-item:hover a{
+
+.registration-item:hover a {
     background: #FFA519;
     border: none;
     color: #fff;
 }
+
 .registration-item:hover a .icons-downloadable {
-	background-position: -30px -46px;
-	width: 18px;
-	height: 18px;
-	display: inline-block;
+    background-position: -30px -46px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
 }
 
 .news-details-pagination {
-	margin-top: 26px;
+    margin-top: 26px;
 }
+
 .app-pagination {
-	overflow: auto;
+    overflow: auto;
 }
 
 .app-pagination .pagination {
-	justify-content: center;
-	align-items: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .app-pagination .pagination .hidden {
-	display: none;
+    display: none;
 }
-.app-pagination .pagination .page{
+
+.app-pagination .pagination .page {
     padding-right: 15.31px;
 }
-.app-pagination .pagination .page:last-child{
+
+.app-pagination .pagination .page:last-child {
     padding-right: 0;
 }
+
 .app-pagination .pagination a {
-	margin: 0 2px;
-	font: normal normal 16px/19px var(--primary-font-family);
-	padding: .5rem .75rem;
-	text-align: center;
-	color: #195DB2;
-	display: inline-block;
+    margin: 0 2px;
+    font: normal normal 16px/19px var(--primary-font-family);
+    padding: .5rem .75rem;
+    text-align: center;
+    color: #195DB2;
+    display: inline-block;
     white-space: nowrap;
     border-radius: 50%;
     background: #A5C6FB;
     opacity: .3;
+    width: 35px;
+    height: 35px;
 }
-.app-pagination .pagination .page:last-child a{
+
+.app-pagination .pagination .page:last-child a {
     color: #195DB2;
     border: 1px solid #195DB2;
     background: #fff;
@@ -175,73 +195,88 @@
 .app-pagination .pagination a:focus,
 .app-pagination .pagination .page.active a,
 .app-pagination .pagination .page:last-child a:hover {
-	background-color: #195DB2;
+    background-color: #195DB2;
     color: #fff;
     opacity: 1;
 }
-@media screen and (max-width:768px){
-    .registration-item{
+
+@media screen and (max-width:768px) {
+    .registration-item {
         padding: 14px 0;
     }
 }
-@media screen and (max-width:480px){
-    .registration-item .down-regidtration a{
+
+@media screen and (max-width:480px) {
+    .registration-item .down-regidtration a {
         border: none;
     }
-    .registration-item .down-regidtration a::before{
+
+    .registration-item .down-regidtration a::before {
         display: none;
     }
-    .registration-item .down-regidtration a i{
+
+    .registration-item .down-regidtration a i {
         margin-left: 0;
     }
 }
+
 /* END mẫu đăng ký */
 
 /* Chi tiết phim */
-.new-title-film h3{
+.new-title-film h3 {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 38px;
     font-weight: bold;
     font-size: 28px;
     color: #494D52;
 }
-.new-title-film div{
+
+.new-title-film div {
     font-family: Arial, Helvetica, sans-serif;
     color: #848484;
     padding-top: 12px;
 }
-.new-title-film div span:last-child{
+
+.new-title-film div span:last-child {
     padding-left: 36px;
 }
-.new-content-film{
+
+.new-content-film {
     color: #494D52;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 15px;
 }
-.new-content-film iframe{
+
+.new-content-film iframe {
     width: 100%;
     height: 444px;
     padding-top: 23px;
 }
-.new-content-film div{
+
+.new-content-film div {
     font-style: italic;
     text-align: center;
     padding-top: 13px;
 }
-.new-content-film p{
+
+.new-content-film p {
     line-height: 22px;
     padding-top: 23px;
 }
-.film-right img{
+
+.film-right img {
     width: 100%;
 }
-.film-right img.range{
+
+.film-right img.range {
     padding-top: 29px;
 }
-.film-watch-more{
+
+.film-watch-more {
     padding-top: 27px;
 }
-.film-watch-more h3{
+
+.film-watch-more h3 {
     text-transform: uppercase;
     padding-left: 21px;
     font-family: Arial, Helvetica, sans-serif;
@@ -250,7 +285,8 @@
     font-weight: bold;
     position: relative;
 }
-.film-watch-more h3::before{
+
+.film-watch-more h3::before {
     content: "";
     width: 7px;
     height: 18px;
@@ -259,280 +295,351 @@
     left: 0;
     background: #0243C1;
 }
-.film-more{
+
+.film-more {
     display: flex;
     padding-top: 27px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.film-more .film-content-more{
+
+.film-more .film-content-more {
     padding-left: 0px;
+    
 }
-.film-more .film-img-more img{
+
+.film-more .film-img-more > a {
+    display: inline-block;
+}
+
+.film-more .film-img-more {
+    padding-right: 15px;
+}
+
+.film-more .film-img-more img {
     width: 100%;
 }
-.film-more .film-content-more a{
+
+.film-more .film-content-more a {
     font-weight: bold;
     color: #4C4C4C;
     line-height: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
 }
-.film-more .film-content-more a:hover{
+
+.film-more .film-content-more a:hover {
     color: #195DB2;
 }
-.film-more .film-content-more span{
+
+.film-more .film-content-more span {
     display: block;
     color: #494D52;
 }
-@media screen and (min-width:1025px) and (max-width:1280px){
-    .film-more .film-content-more{
+
+@media screen and (min-width:1025px) and (max-width:1280px) {
+    .film-more .film-content-more {
         font-size: 14px;
     }
-    .film-more .film-content-more a{
+
+    .film-more .film-content-more a {
         line-height: 19.5px;
     }
-    .film-more .film-content-more span{
+
+    .film-more .film-content-more span {
         padding-top: 5px;
     }
 }
-@media screen and (min-width:769px) and (max-width:1024px){
-    .film-watch-more h3{
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .film-watch-more h3 {
         font-size: 16px;
     }
-    .film-watch-more h3::before{
+
+    .film-watch-more h3::before {
         height: 13px;
     }
-    .film-more .film-content-more a{
+
+    .film-more .film-content-more a {
         line-height: 14px;
     }
-    .film-more .film-content-more{
+
+    .film-more .film-content-more {
         font-size: 12px;
     }
-    .film-more .film-content-more span{
+
+    .film-more .film-content-more span {
         padding-top: 4px;
     }
 }
-@media screen and (max-width:768px){
-    .film-more .film-content-more span{
+
+@media screen and (max-width:768px) {
+    .film-more .film-content-more span {
         padding-top: 10px;
     }
 }
-@media screen and (max-width:480px){
-    .new-content-film iframe{
+
+@media screen and (max-width:480px) {
+    .new-content-film iframe {
         height: 211px;
-    } 
-    .new-title-film div span:last-child{
+    }
+
+    .new-title-film div span:last-child {
         padding-left: 15px;
     }
 
 }
+
 /* END chi tiết phim */
 
 /* lịch chiếu phim */
 .col-lg-6:nth-child(1) .calendar-film,
-.col-lg-6:nth-child(2) .calendar-film{
+.col-lg-6:nth-child(2) .calendar-film {
     border: none;
 }
-.calendar-film{
+
+.calendar-film {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid #E5E5E5;
 }
-.calendar-film .calendar-img-film img{
+
+.calendar-film .calendar-img-film img {
     width: 100%;
 }
-.calendar-content-film{
+
+.calendar-content-film {
     padding-left: 0;
 }
-.calendar-content-film .title-film-calendar a{
+
+.calendar-content-film .title-film-calendar a {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 22px;
     font-weight: bold;
     color: #494D52;
 }
-.calendar-content-film .btn-watch a{
+
+.calendar-content-film .btn-watch a {
     padding: 9px 22px;
     border: 1px solid #FFA519;
     color: #FFA519;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 34px;
 }
-.calendar-content-film .btn-watch a:hover{
+
+.calendar-content-film .btn-watch a:hover {
     background: #FFA519;
     border: none;
     color: #fff;
 }
-.calendar-detail{
+
+.calendar-detail {
     padding-top: 3px;
     font-family: Arial, Helvetica, sans-serif;
     color: #494D52;
 }
-.calendar-detail .table td{
+
+.calendar-detail .table td {
     padding: 0.5rem 0;
     border: none;
     color: #494D52;
 }
-@media screen and (max-width:1200px){
-    .calendar-detail .table td{
+
+@media screen and (max-width:1200px) {
+    .calendar-detail .table td {
         font-size: 15px;
         padding: 0.3rem 0;
     }
 }
-@media screen and (max-width:766px){
-    .calendar-detail .table td{
+
+@media screen and (max-width:766px) {
+    .calendar-detail .table td {
         font-size: 12px;
     }
-    .calendar-content-film{
+
+    .calendar-content-film {
         padding-left: 15px;
     }
 }
-@media screen and (max-width:480px){
-    .calendar-film{
+
+@media screen and (max-width:480px) {
+    .calendar-film {
         padding-top: 15px;
         padding-bottom: 15px;
         border: none;
     }
-    .calendar-content-film{
+
+    .calendar-content-film {
         padding-left: 15px;
     }
-    .calendar-detail{
+
+    .calendar-detail {
         display: none;
     }
-    .title-film-calendar{
+
+    .title-film-calendar {
         padding-bottom: 15px;
     }
 }
+
 /* END lịch chiếu phim */
 
 /* kết quả tìm kiếm */
-.item-search{
+.item-search {
     padding: 15px 0;
     border-top: 1px dashed #D9D6D6;
 }
-.item-search:first-child{
+
+.item-search:first-child {
     border: none;
 }
-.item-search .item-right{
+
+.item-search .item-right {
     font-family: Arial, Helvetica, sans-serif;
     padding-left: 0;
 }
-.item-search .item-right h4{
+
+.item-search .item-right h4 {
     font-weight: bold;
     line-height: 20px;
     color: #4C4C4C;
 }
-.item-search .item-right p{
+
+.item-search .item-right p {
     padding-top: 5px;
     padding-bottom: 9px;
     text-align: justify;
     line-height: 20px;
     color: #4C4C4C;
 }
-.item-search .item-right a{
+
+.item-search .item-right a {
     color: #195DB2;
 }
-.list-option a img{
-    padding-bottom: 19px;
+
+.list-option a img {
+    padding-bottom: 15px;
 }
-.list-option a img{
+
+.list-option a img {
     width: 100%;
 }
-@media screen and (min-width: 1025px){
-    .item-search .item-right p{
+
+@media screen and (min-width: 1025px) {
+    .item-search .item-right p {
         padding: 10px 0;
     }
 }
-@media screen and (max-width: 1024px){
-    .item-search .item-right p{
+
+@media screen and (max-width: 1024px) {
+    .item-search .item-right p {
         padding: 3px 0;
     }
 }
-@media screen and (max-width: 768px){
-    .item-search .item-right p{
+
+@media screen and (max-width: 768px) {
+    .item-search .item-right p {
         padding-top: 2px;
     }
-    .item-search .item-right{
+
+    .item-search .item-right {
         padding-left: 20px;
     }
-    .item-order{
+
+    .item-order {
         order: 1;
     }
 }
-@media screen and (max-width: 480px){
-    .item-search .item-right h4{
+
+@media screen and (max-width: 480px) {
+    .item-search .item-right h4 {
         padding-top: 10px;
     }
-    .item-search .item-right p{
+
+    .item-search .item-right p {
         padding-top: 5px;
         padding-bottom: 10px;
     }
-}   
+}
+
 /* END kết quả tìm kiếm */
 
 /* lịch sử tìm kiếm */
-.history-film{
+.history-film {
     font-family: Arial, Helvetica, sans-serif;
     color: #4C4C4C;
     line-height: 22px;
     text-align: justify;
 }
-.history-film p,.history-film h3{
+
+.history-film p,
+.history-film h3 {
     padding-top: 20px;
 }
-.history-film h3{
+
+.history-film h3 {
     font-weight: bold;
 }
 
 /* END lịch sử ngành */
 
 /* Cơ cấu tổ chức */
-.structure-detail{
+.structure-detail {
     display: flex;
     padding: 20px 0;
     border-top: 1px dashed #D0D0D0;
 }
-.structure-detail:first-child{
+
+.structure-detail:first-child {
     padding-top: 0;
     border: none;
 }
-.structure-detail .profile-people{
+
+.structure-detail .profile-people {
     display: flex;
     align-items: center;
     padding-left: 23px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 22px;
 }
-.structure-detail .profile-people p{
+
+.structure-detail .profile-people p {
     font-weight: bold;
     padding-bottom: 15px;
 }
+
 .left-nav {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .left-nav .nav-item .nav-link {
-	font: normal normal 16px/18px var(--primary-font-family);
+    font: normal normal 16px/18px var(--primary-font-family);
     color: #494D52;
-	padding: 1rem 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid #D0D0D0;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D0D0D0;
     position: relative;
     background: #fff;
 }
-.left-nav .nav-item .nav-link:first-child{
+
+.left-nav .nav-item .nav-link:first-child {
     border-top: 1px solid #D0D0D0;
 }
+
 .left-nav .nav-item .nav-link .title {
-	padding-left: 22px;
+    padding-left: 22px;
 }
-.left-nav .nav-item .choose,.left-nav .nav-item .nav-link:hover{
+
+.left-nav .nav-item .choose,
+.left-nav .nav-item .nav-link:hover {
     background: #CEDFFF;
     font-weight: bold;
     border-left: 6px solid #0243C1;
 }
-@media screen and (max-width: 480px){
-    .structure-detail .profile-people{
+
+@media screen and (max-width: 480px) {
+    .structure-detail .profile-people {
         padding-left: 15px;
     }
 }
-
