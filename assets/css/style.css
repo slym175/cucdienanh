@@ -472,6 +472,7 @@ em {
 }
 
 .head-nav.navbar-dark .navbar-nav .nav-item:hover,
+.head-nav.navbar-dark .navbar-nav .nav-item:focus,
 .head-nav.navbar-dark .navbar-nav .nav-item.active,
 .head-nav.navbar-dark .navbar-nav .nav-item.show {
 	background-color: #fff;
@@ -479,12 +480,14 @@ em {
 }
 
 .head-nav.navbar-dark .navbar-nav .nav-item:hover .icons-search,
+.head-nav.navbar-dark .navbar-nav .nav-item:focus .icons-search,
 .head-nav.navbar-dark .navbar-nav .nav-item.active .icons-search,
 .head-nav.navbar-dark .navbar-nav .nav-item.show .icons-search {
 	background-position: -30px -6px;
 }
 
 .head-nav.navbar-dark .navbar-nav .nav-item:hover .nav-link,
+.head-nav.navbar-dark .navbar-nav .nav-item:focus .nav-link,
 .head-nav.navbar-dark .navbar-nav .nav-item.active .nav-link,
 .head-nav.navbar-dark .navbar-nav .nav-item.show .nav-link {
 	color: var(--primary-color);
@@ -493,7 +496,7 @@ em {
 .change_language {
 	background: unset;
 	border: unset;
-	margin-right: 20px;
+	margin-right: 0;
 }
 
 .change_language:focus,
@@ -910,7 +913,7 @@ em {
 .single-news .img-container {
 	height: 0;
 	width: 100%;
-	padding-top: 56.25%;
+	padding-top: 66.66%;
 	overflow: hidden;
 	display: block;
 }
@@ -951,7 +954,7 @@ em {
 
 .single-news .news-des {
 	display: -webkit-box;
-	-webkit-line-clamp: 4;
+	-webkit-line-clamp: 5;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
 }
@@ -1259,6 +1262,7 @@ em {
 .item-search.single-news .news-des{
 	margin-bottom: 16px;
 	line-height: 20px;
+	text-align: justify;
 }
 
 .icons-downloadable {
@@ -1361,5 +1365,45 @@ em {
 	.most-viewed-news .item-search .item-right {
 		padding-left: 30px;
 		margin-top: 8px;
+	}
+}
+
+.item-search .item-right h4 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: var(--primary-text-color);
+}
+
+.nav-lang {
+	position: relative;
+}
+
+.nav-lang .other-lang {
+	position: absolute;
+    left: 0;
+    padding: 1rem;
+    background-color: #fff;
+    color: #195DB2;
+    font-weight: bold;
+    transition: .3s;
+    visibility: hidden;
+	opacity: 0;
+	font-size: 15px;
+}
+
+.nav-lang .other-lang.visible {
+	visibility: visible;
+    opacity: 1;
+}
+
+.item-search .item-right {
+    padding-left: 30px;
+}
+
+@media (max-width: 991.98px) {
+	.left-nav {
+		margin-top: 2rem;
 	}
 }

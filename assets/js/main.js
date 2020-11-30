@@ -6,6 +6,9 @@ $(function () {
         nav: true,
         dots: true,
         autoHeight: true,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
         responsive: {
             
         }
@@ -43,6 +46,10 @@ $(function () {
                 items: 3
             }
         }
+    })
+
+    $('.current-lang').click(function(e) {
+        $('.other-lang').toggleClass('visible');
     })
 });
 
