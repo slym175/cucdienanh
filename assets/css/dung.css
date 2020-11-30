@@ -304,10 +304,10 @@
 
 .film-more .film-content-more {
     padding-left: 0px;
-    
+
 }
 
-.film-more .film-img-more > a {
+.film-more .film-img-more>a {
     display: inline-block;
 }
 
@@ -410,11 +410,13 @@
 .calendar-content-film {
     padding-left: 0;
 }
-.title-film-calendar{
+
+.title-film-calendar {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 .calendar-content-film .title-film-calendar a {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 22px;
@@ -446,12 +448,15 @@
 .calendar-detail .table td {
     padding: 0.5rem 0;
     border: none;
+    padding-bottom: 0;
+    padding-top: .75rem;
     color: #494D52;
 }
-.calendar-detail .table tr td:last-child{
+
+.calendar-detail .table tr td:last-child {
     display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -459,7 +464,7 @@
 @media screen and (max-width:1200px) {
     .calendar-detail .table td {
         font-size: 15px;
-        padding: 0.3rem 0;
+        padding: 0.5rem 0;
     }
 }
 

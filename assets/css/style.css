@@ -1407,3 +1407,40 @@ em {
 		margin-top: 2rem;
 	}
 }
+
+.calendar-detail .table td:first-child {
+	min-width: 100px;
+}
+
+@media (max-width: 575.98px) {
+	.grid-movies .col-6.col-sm-12.col-lg-6:nth-child(odd){
+		padding-right: 10px;
+	}
+
+	.grid-movies .col-6.col-sm-12.col-lg-6:nth-child(even){
+		padding-left: 10px;
+	}
+}
+
+.calendar-detail .table tr td {
+	padding-bottom: 0;
+}
+
+@media (max-width: 374.98px) {
+	.grid-movies .col-6.col-sm-12.col-lg-6{
+		width: 100%;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+
+	.grid-movies .col-6.col-sm-12.col-lg-6:nth-child(odd){
+		padding-right: 30px;
+	}
+
+	.grid-movies .col-6.col-sm-12.col-lg-6:nth-child(even){
+		padding-left: 30px;
+	}
+}
